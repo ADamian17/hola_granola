@@ -7,7 +7,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: "http://holagranola.local/",
+        url: "http://holagranola.local/graphql",
       },
     },
     "gatsby-plugin-sass",
