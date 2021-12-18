@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "http://hola-granola.local/",
     title: "hola_granola",
   },
   plugins: [
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: "http://holagranola.local/graphql",
+        url: "http://hola-granola.local/graphql",
       },
     },
     "gatsby-plugin-sass",
