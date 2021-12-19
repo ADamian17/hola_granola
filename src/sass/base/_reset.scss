@@ -1,0 +1,26 @@
+@use "../abstracts"as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 50%; // 8px
+
+  @include breakpoint(tablet) {
+    font-size: 62.5%; // 10px
+    background-color: red;
+  }
+
+  @include breakpoint(tablet-land) {
+    font-size: 75%; // 12px
+    background-color: yellow;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+}

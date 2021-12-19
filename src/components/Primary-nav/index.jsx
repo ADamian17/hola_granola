@@ -7,7 +7,7 @@ const PrimaryNavContainer = () => {
 
   const query = graphql`
   {
-    wpMenu( name: {eq: "main-menu"}) {
+    wpMenu(name: {eq: "main-menu"}) {
       menuItems {
         nodes {
           label

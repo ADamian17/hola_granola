@@ -1,0 +1,21 @@
+@use "./variables"as *;
+
+@mixin breakpoint ($screen-sizes) {
+  @if $screen-sizes==phone {
+    @media screen and (min-width: $phone) {
+      @content;
+    }
+  }
+
+  @if $screen-sizes==tablet {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+
+  @if $screen-sizes==tablet-land {
+    @media screen and (min-width: $tablet-land) {
+      @content;
+    }
+  }
+}

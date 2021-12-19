@@ -3,7 +3,7 @@ const path = require('path');
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage, createRedirect } = actions;
 
-  createRedirect({fromPath: '/', toPath: '/', redirectInBrowser: true, isPermanet: true })
+  createRedirect({fromPath: '/', toPath: '/home', redirectInBrowser: true, isPermanet: true });
   
   const template = path.resolve(`src/templates/page.js`);
 
